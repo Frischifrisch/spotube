@@ -180,19 +180,19 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: Spotube-Windows-Bundle
           path: ./Spotube-Windows-Bundle
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: Spotube-Macos-Bundle
           path: ./Spotube-Macos-Bundle
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: Spotube-Linux-Bundle
           path: ./Spotube-Linux-Bundle
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: Spotube-Android-Bundle
           path: ./Spotube-Android-Bundle
@@ -273,7 +273,7 @@ jobs:
         uses: dawidd6/action-get-tag@v1
         with:
           strip_v: true
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: Spotube-Linux-Bundle
           path: ./Spotube-Linux-Bundle
